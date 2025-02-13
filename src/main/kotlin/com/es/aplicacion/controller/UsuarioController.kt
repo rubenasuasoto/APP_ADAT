@@ -65,9 +65,7 @@ class UsuarioController {
         return ResponseEntity(mapOf("token" to token), HttpStatus.CREATED)
     }
     @GetMapping("/")
-    fun get(@PathVariable id: Long,
-            httpRequest: HttpServletRequest
-    ): String {
+    fun get(): String {
 
         return "<h1> Hola Mundo</h1>"
 
